@@ -6,7 +6,7 @@
   libX11,
   libXcursor,
   libXrandr,
-  libXi
+  libXi,
 }:
 pkgs.rustPlatform.buildRustPackage rec {
   pname = "stl-thumb";
