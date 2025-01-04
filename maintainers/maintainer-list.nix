@@ -22106,7 +22106,7 @@
     github = "SyntaxualSugar";
     githubId = 12888402;
     name = "Trenton Fox";
-  }
+  };
   synthetica = {
     email = "nix@hilhorst.be";
     github = "Synthetica9";
