@@ -42,6 +42,8 @@ pkgs.rustPlatform.buildRustPackage rec {
     description = "Thumbnail generator for STL files";
     homepage = "https://github.com/unlimitedbacon/stl-thumb";
     license = licenses.mit;
+    mainProgram = stl-thumb;
+    platforms = platforms.linux;
     maintainers = with lib.maintainers; [ SyntaxualSugar ];
   };
   buildInputs = with pkgs; [
