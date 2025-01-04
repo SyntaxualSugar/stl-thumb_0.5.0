@@ -42,7 +42,7 @@ pkgs.rustPlatform.buildRustPackage rec {
     description = "Thumbnail generator for STL files";
     homepage = "https://github.com/unlimitedbacon/stl-thumb";
     license = licenses.mit;
-    maintainers = [ SyntaxualSugar ];
+    maintainers = with lib.maintainers; [ SyntaxualSugar ];
   };
   buildInputs = with pkgs; [
     fontconfig
