@@ -10,7 +10,7 @@
 }:
 pkgs.rustPlatform.buildRustPackage rec {
   pname = "stl-thumb";
-  version = "v0.5.0-6bc9057";
+  version = "0.5.0-6bc9057";
 
   src = fetchFromGitHub {
     owner = "unlimitedbacon";
@@ -42,7 +42,7 @@ pkgs.rustPlatform.buildRustPackage rec {
     description = "Thumbnail generator for STL files";
     homepage = "https://github.com/unlimitedbacon/stl-thumb";
     license = licenses.mit;
-    mainProgram = stl-thumb;
+    mainProgram = "stl-thumb";
     platforms = platforms.linux;
     maintainers = with lib.maintainers; [ SyntaxualSugar ];
   };
